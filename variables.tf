@@ -55,7 +55,7 @@ variable cluster_name {
 
 variable kube_version {
   description = "Kube version to use for the cluster. use `ibmcloud ks versions` to see a list of available versions"
-  default     = "1.15.10"
+  default     = "4.4.20_openshift"
 }
 
 variable default_pool_size {
