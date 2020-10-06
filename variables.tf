@@ -70,7 +70,7 @@ variable hardware {
 
 variable machine_type {
   description = "hardware type for cluster"
-  default     = "b2c.4x16"
+  default     = "b3c.4x16"
 }
 
 variable private_only {
