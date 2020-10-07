@@ -1,3 +1,11 @@
+provider "ibm" {
+  generation = 2
+}
+
+resource "ibm_is_vpc" "vpc1" {
+  name = "myvpc"
+}
+
 
 ##############################################################################
 # Create Cluster
@@ -6,6 +14,7 @@
 resource "ibm_container_cluster" "cluster" {
   name              = "${var.cluster_name}${random_id.name.hex}"
   datacenter        = var.datacenter
+  vpc_id            = ibm_is_vpc.vpc1.id
   default_pool_size = var.default_pool_size
   machine_type      = var.machine_type
   hardware          = var.hardware
