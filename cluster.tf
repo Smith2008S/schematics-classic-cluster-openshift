@@ -1,10 +1,10 @@
-provider "ibm" {
-  generation = 2
-}
+#provider "ibm" {
+#  generation = 2
+#}
 
-resource "ibm_is_vpc" "vpc1" {
-  name = "myvpc"
-}
+#resource "ibm_is_vpc" "vpc1" {
+#  name = "myvpc"
+#}
 
 
 ##############################################################################
