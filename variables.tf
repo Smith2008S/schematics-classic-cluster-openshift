@@ -26,9 +26,9 @@ variable "cluster_name" {
   default = "classic-cluster"
 }
 
-variable "private_vlan_id" {}
+#variable "private_vlan_id" {}
 
-variable "public_vlan_id" {}
+#variable "public_vlan_id" {}
 
 
 variable kube_version {
